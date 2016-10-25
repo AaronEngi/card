@@ -1,0 +1,201 @@
+/* 
+Project: HTML & CSS Postcards
+Vintage French Postcard
+Author: Monica Aguinaga
+URL: http://itsnot1889.com/
+@thisismonica
+
+Postcard Credit: Unknown (let me know via twitter if you know the origin)
+stamp: http://dl.dropbox.com/u/5144828/stamp.jpg
+bg: http://dl.dropbox.com/u/5144828/webtreats-paper-pattern-2-brown-5.jpg
+*/
+
+
+/* Normalizes */
+
+body,
+ul,
+li,
+h1,
+h2,
+h3,
+form,
+fieldset,
+input,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+ul {
+	list-style: none;
+}
+
+fieldset,
+img {
+	border: 0;
+}
+
+#container {
+	width: 580px;
+	min-height: 370px;
+	margin-top: 50px;
+	background-color: #F7F0EA;
+	background-image: url(http://dl.dropbox.com/u/5144828/webtreats-paper-pattern-2-brown-5.jpg);
+	-moz-box-shadow: 1px 1px 4px #BDBDBA;
+	-webkit-box-shadow: 1px 1px 4px #BDBDBA;
+	box-shadow: 1px 1px 4px #BDBDBA;
+	float: left;
+	margin: 20px;
+}
+
+#branding {
+	font-family: 'Goudy Bookletter 1911', serif;
+	padding: 30px;
+	text-align: center;
+	color: #A19182;
+	background-image: url(http://dl.dropbox.com/u/5144828/stamp.jpg);
+	background-repeat: no-repeat;
+	background-position: 480px 20px;
+}
+
+#originalpostcard {
+	margin: 20px;
+	float: left;
+	padding-top: 30px;
+}
+
+#border {
+	border-bottom: 1px dotted black;
+	width: 200px;
+	margin: auto;
+	margin-top: -15px;
+}
+
+#message p {
+	witdh: 50px;
+	font-size: .89em;
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+	padding-top: 15px;
+	padding-left: 13px;
+}
+
+#message p,
+#sender p,
+#content p {
+	font-family: 'Meddon', serif;
+	color: #62444E;
+	font-style: italic;
+}
+
+#sender p {
+	font-size: 1.4em;
+	text-align: center;
+	border-bottom: 1px dotted #442957;
+	display: inline;
+	margin-left: 50px;
+	padding-top: 15px;
+}
+
+#phone {
+	margin-left: 90px;
+}
+
+#branding li {
+	display: inline;
+	padding-right: 55px;
+	font-size: .9em;
+}
+
+#content {
+	padding-top: 10px;
+}
+
+#content ul {
+	width: 600px;
+}
+
+#content li {
+	width: 300px;
+	display: inline;
+	float: left;
+}
+
+#sender {
+	background-image: url(http://dl.dropbox.com/u/5144828/line.png);
+	background-repeat: repeat-y;
+}
+
+#phone {
+	padding-left: 40px;
+}
+
+h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: .7em;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	word-spacing: 5px;
+	letter-spacing: .1em;
+}
+
+h1 {
+	font-size: 1.6em;
+	text-transform: uppercase;
+	font-weight: lighter;
+	letter-spacing: .15em;
+	display: inline;
+}
+
+h3 {
+	font-size: .8em;
+	font-style: italic;
+	text-align: center;
+	color: #8E8264;
+}
+
+.capitalm {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-style: normal;
+	font-size: .87em;
+	padding-right: 10px;
+	margin-bottom: -20px;
+	border-bottom: none;
+}
+
+h4 {
+	font-family: Arial, Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: .8em;
+	color: #666666;
+	letter-spacing: .1em;
+	padding-left: 20px;
+}
+
+a {
+	color: #666666;
+	text-decoration: underline;
+	font-style: italic;
+	font-size: .9em;
+}
+
+a:hover {
+	color: #000000;
+}
+
+::-moz-selection {
+	color: #fff;
+	color: rgba(255, 255, 255, .85);
+	background: #D39995;
+}
+
+::selection {
+	color: #fff;
+	color: rgba(255, 255, 255, .85);
+	background: #D39995;
+}

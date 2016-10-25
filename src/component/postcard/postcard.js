@@ -1,7 +1,13 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-export default class Postcard{
+import './postcard.less'
+
+export default class Postcard extends React.Component{
+	state={
+		content
+	}
+	
 	render(){
 		return (
 			<div id="container">
@@ -20,28 +26,27 @@ export default class Postcard{
 				<li>Brief</li>
 				</ul>
 
-				</div><!--end of div branding-->
+				</div>
 				<div id="border">
 				</div>
 				<div id="content">
 				<ul>
 				<li id="message">
-				<h3>Partie r¨¦serv¨¦e a la correspondance</h3>
-				<p>Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la m¨ºme direction.</p>
+				<h3>Partie rï¿½ï¿½servï¿½ï¿½e a la correspondance</h3>
+				<p>Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la mï¿½ï¿½me direction.</p>
 				<p>Oscar Wilde</p>
 
 
 				</li> 
 				<li id="sender">
-				<h3>Adresse du destinataire</h3>
-				<p><span class="capitalm">M</span>lle G. Simon</p><br>
-				<p>Rue de Simon 31</p><br>
-				<p>Arbestre</p><br>
-				<p id="phone">Phone</p>
-
+					<h3>Adresse du destinataire</h3>
+					<p><span class="capitalm">M</span>lle G. Simon</p><br />
+					<p>Rue de Simon 31</p><br />
+					<p>Arbestre</p><br />
+					<p id="phone">Phone</p>
 				</li> 
 				</ul>
-				</div> <!--end of content-->
+				</div> 
 
 
 			</div>
