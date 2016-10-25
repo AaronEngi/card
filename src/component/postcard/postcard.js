@@ -5,7 +5,10 @@ import './postcard.less'
 
 export default class Postcard extends React.Component{
 	state={
-		content
+		to:'孔明、张飞',
+		content:'生命无常，各奔天涯，独坐而嘤嘤。尤记绕柱而转，贴墙而遁,隔帘相扑。母上安好，勿忧，但缅过往。',
+		sender:'曹操',
+		address:'海角市天涯路1号'
 	}
 	
 	render(){
@@ -13,17 +16,10 @@ export default class Postcard extends React.Component{
 			<div id="container">
 				<div id="branding">
 
-				<h2>Union Postale Universelle</h2>
+				<h2>森林邮局</h2>
 				<ul>
-				<li>Cartolina Postale</li>
-				<li>
-				<h1>Carte Postale</h1>
-				</li>
-				<li>Ta</li>
-				<li>Levelezo-lap</li>
-				<li>Postcard</li>
-				<li>Postkarte</li>
-				<li>Brief</li>
+				<li>松果办事处</li>
+				<li>精品明信片</li>
 				</ul>
 
 				</div>
@@ -32,18 +28,17 @@ export default class Postcard extends React.Component{
 				<div id="content">
 				<ul>
 				<li id="message">
-				<h3>Partie r��serv��e a la correspondance</h3>
-				<p>Aimer, ce n'est pas se regarder l'un l'autre, c'est regarder ensemble dans la m��me direction.</p>
-				<p>Oscar Wilde</p>
+				<h3>邮件内容</h3>
+				<p>{this.state.to}:</p>
+				<p>  {this.state.content}</p>
+				<p>{this.state.sender}</p>
 
 
 				</li> 
 				<li id="sender">
-					<h3>Adresse du destinataire</h3>
-					<p><span class="capitalm">M</span>lle G. Simon</p><br />
-					<p>Rue de Simon 31</p><br />
-					<p>Arbestre</p><br />
-					<p id="phone">Phone</p>
+					<h3>收件人地址</h3>
+					<p>{this.state.address}</p><br />
+					<p>   {this.state.sender}(寄)</p><br />
 				</li> 
 				</ul>
 				</div> 
