@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import './postcard.less'
+import './cardImg.less'
 
 export default class CardImg extends React.Component{
 	state={
@@ -14,7 +14,7 @@ export default class CardImg extends React.Component{
 	render(){
 		return (
 			<div id="container">
-				<img src='http://pic1.win4000.com/wallpaper/0/4fcebbff8f008.jpg' />
+				<img id="imgMain" src='http://pic1.win4000.com/wallpaper/0/4fcebbff8f008.jpg' />
 
 			</div>
 		);

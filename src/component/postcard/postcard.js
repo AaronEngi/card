@@ -15,35 +15,45 @@ export default class Postcard extends React.Component{
 		return (
 			<div id="container">
 				<div id="branding">
-
-				<h2>森林邮局</h2>
+				
+				<h2>Union Postale Universelle</h2>
 				<ul>
-				<li>松果办事处</li>
-				<li>精品明信片</li>
+				<li>Cartolina Postale</li>
+				<li>
+				<h1>Carte Postale</h1>
+				</li>				
+				<li>Ta</li>
+				<br />
+				<li>Levelezo-lap</li>
+				<li>Postcard</li>
+				<li>Postkarte</li>
+				<li>Brief</li>
 				</ul>
-
+				
 				</div>
 				<div id="border">
 				</div>
 				<div id="content">
 				<ul>
 				<li id="message">
-				<h3>邮件内容</h3>
-				<p>{this.state.to}:</p>
-				<p>  {this.state.content}</p>
+				<h3>Partie réservée a la correspondance</h3>
+				<p>{this.state.content}</p>
 				<p>{this.state.sender}</p>
-
-
+				
+				
 				</li> 
 				<li id="sender">
-					<h3>收件人地址</h3>
-					<p>{this.state.address}</p><br />
-					<p>   {this.state.sender}(寄)</p><br />
+				<h3>Adresse du destinataire</h3>
+				<p><span className="capitalm">M</span>lle G. Simon</p><br/>
+				<p>Rue de Simon 31</p><br/>
+				<p>Arbestre</p><br/>
+				<p id="phone">Phone</p>
+				
 				</li> 
 				</ul>
-				</div> 
-
-
+			</div> 
+			
+			
 			</div>
 		);
 	}

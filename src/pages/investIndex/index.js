@@ -13,8 +13,9 @@ export default class InvestIndex extends React.Component {
     render() {
     	return(
     		<div>
-	    		<CardImg />
+	    		
 		    	<PostCard />
+		    	<CardImg />
 	    	</div>
     	);
     }
