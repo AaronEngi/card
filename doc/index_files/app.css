@@ -1,0 +1,1714 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color:transparent;
+}
+
+html, body {
+    height: 100%;
+}
+
+.clear {
+    clear: both;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+}
+
+.bottomOkButton {
+    background-color: #565656;
+    height: 40px;
+    width: 100%;
+    color: #ffffff;
+    position: absolute;
+    font-size: 18px;
+    bottom: 0;
+}
+
+.active-01 {
+    background-color: #EBEBEB;
+}
+
+.rotate-90 {
+    transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+}
+
+.corner {
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+    display: none;
+}
+
+#overlay #content {
+    position: absolute;
+    top: 20%;
+    bottom: 20%;
+    left: 15%;
+    right: 15%;
+    background-color: #ffffff;
+}
+
+#header {
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-color: #1EA9F0;
+    z-index: 1000;
+}
+
+#header button {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 40px;
+    font-weight: bold;
+    /*margin-top: 10px;*/
+}
+
+#header #button_left {
+    margin-left: 20px;
+}
+
+#header #button_right {
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+#body {
+    position: absolute;
+    left:0;
+    top: 40px;
+    right: 0;
+    bottom: 0;
+    z-index: 800;
+}
+
+/*page selectTemplate start*/
+#selectTemplate {
+    background-color: #F7F7F7;
+    height: 100%;
+}
+
+#selectTemplate #image-container {
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+    bottom: 160px;
+}
+
+#selectTemplate #image-container #pictureCanvas {
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+#selectTemplate #image-container #templateCanvas {
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    -webkit-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    -moz-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+}
+
+#selectTemplate ul {
+    background-color: #676767;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+    list-style: none;
+    overflow-x: auto;
+    white-space:nowrap;
+    -webkit-overflow-scrolling: touch;
+}
+
+#selectTemplate ul li {
+    background-color: #ffffff;
+    width: 50px;
+    min-width: 50px;
+    height: 70px;
+    margin: 15px 10px;
+    display: inline-block;
+}
+
+#selectTemplate ul li img {
+    width: 100%;
+    height: 100%;
+}
+
+#selectTemplate #tabView {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#selectTemplate #tabView button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    font-size: 16px;
+}
+
+#selectTemplate #tabView button img {
+    width: 16px;
+    position: absolute;
+    top:-11px;
+    left: 48%;
+}
+
+#selectTemplate #tabView #portrait {
+    left: 0;
+}
+
+#selectTemplate #tabView #landscape {
+    right: 0;
+}
+/*page selectTemplate end */
+
+/***********page editInfo start *******************/
+#editInfo {
+    width: 100%;
+}
+
+#editInfo #headerContainer {
+    margin-top: 15px;
+    position: relative;
+}
+
+#editInfo #receiverInfo {
+    background-color: #F9F9F9;
+    /*height: 100px;*/
+    height: 50px;
+    margin-right: 130px;
+}
+#editInfo #signatureInfo {
+    background-color: #F9F9F9;
+    /*height: 100px;*/
+    height: 50px;
+    margin-right: 130px;
+}
+
+#editInfo #postmark {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    right: 15px;
+    top: 0;
+}
+
+#editInfo #postmark img {
+    width: 100%;
+    height: 100%;
+}
+
+#editInfo #greetingsTitle {
+    height: 40px;
+    margin-top: 15px;
+    background-color: #F9F9F9;
+    line-height: 40px;
+    border-bottom: 1px solid #DEDDDB;
+}
+
+#editInfo #greetingsSelect {
+    height: 40px;
+    margin-top: 15px;
+    background-color: #F9F9F9;
+    line-height: 40px;
+    border-bottom: 1px solid #DEDDDB;
+}
+
+#editInfo #greetingsContent {
+    width: 100%;
+    background-color: #F9F9F9;
+    position: absolute;
+    /*top:171px;*/
+    top:230px;
+    bottom:0;
+}
+
+#editInfo #greetingsContent #text
+{
+    line-height: 30px;
+    background: url("../../images/line.png") repeat center top;
+}
+
+#editInfo #greetingsContent>p {
+    margin: 15px;
+}
+
+/***********page editInfo end *******************/
+
+
+/***********page editContact start***************************/
+#editContact #iscrollWrapper {
+    top: 0;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#editContact #scroller {
+    padding: 20px 0;
+}
+
+#editContact #container {
+    margin: 0 15px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#editContact #container #detailAddressInfo {
+    height: 80px;
+    background-color: #0FAAEF;
+}
+
+#editContact #container #detailAddressInfoText {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+}
+
+#editContact #container #mapIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/map-icon.png");
+    background-size: 100% 100%;
+}
+
+#editContact #container #optionAddress {
+    background-color: #3B3B3B;
+    height: 40px;
+    position: relative;
+}
+
+#editContact #container #optionAddress #locationIcon {
+    position: relative;
+    top: 5px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url("../images/location.png");
+    background-size: 100% 100%;
+}
+
+#editContact #container #optionAddress button {
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#editContact #container #optionAddress #buttonAddress {
+    width: 30%;
+    border-right: 1px solid #2C2C2C;
+}
+
+#editContact #container #optionAddress #listIcon {
+    display: inline-block;
+    top: 5px;
+    left: -3px;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#editContact #container #optionAddress #buttonAddressBook {
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+#editContact #container #optionAddress #downTriangleIcon {
+    position: absolute;
+    bottom: -7px;
+    left: 40px;
+    width: 14px;
+    height: 7px;
+    background-image: url("../images/down-triangle.png");
+    background-size: 100% 100%;
+}
+
+#editContact #formContainer .input,select {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    border: none;
+    border-bottom: 1px solid #EEEDEB;
+    background-color: #FBFAF8;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#editContact #formContainer #province {
+    width: 50%;
+}
+
+#editContact #formContainer #city {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+/***********page editContact end***************************/
+
+
+/***********page editSender start***************************/
+#editSender{ background: #ffffff;}
+#editSender #iscrollWrapper {
+    top: 0;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#editSender #scroller {
+    padding: 20px 0;
+}
+
+#editSender #container {
+    margin: 0 15px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#editSender #container #detailSenderInfo {
+    height: 80px;
+    background-color: #0FAAEF;
+}
+
+#editSender #container #detailSenderInfoText {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #ffffff;
+}
+
+#editSender #container #mapIcon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/map-icon.png");
+    background-size: 100% 100%;
+}
+
+#editSender #container #optionAddress {
+    background-color: #3B3B3B;
+    height: 40px;
+    position: relative;
+}
+
+#editSender #container #optionAddress #man {
+    position: relative;
+    top: 5px;
+    width: 22px;
+    height: 22px;
+    display: inline-block;
+    background-image: url("../images/man.png");
+    background-size: 100% 100%;
+}
+
+#editSender #container #optionAddress button {
+    color: #ffffff;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#editSender #container #optionAddress #buttonAddress {
+    width: 30%;
+    border-right: 1px solid #2C2C2C;
+}
+
+#editSender #container #optionAddress #listIcon {
+    display: inline-block;
+    top: 5px;
+    left: -3px;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#editSender #container #optionAddress #buttonAddressBook {
+    width: 70%;
+    position: absolute;
+    right: 0;
+}
+
+#editSender #container #optionAddress #downTriangleIcon {
+    position: absolute;
+    bottom: -7px;
+    left: 40px;
+    width: 14px;
+    height: 7px;
+    background-image: url("../images/down-triangle.png");
+    background-size: 100% 100%;
+}
+
+#editSender #formContainer .input,select {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    line-height: 50px;
+    border: none;
+    border-bottom: 1px solid #EEEDEB;
+    background-color: #FBFAF8;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#editSender #formContainer #province {
+    width: 50%;
+}
+
+#editSender #formContainer #city {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+/***********page editSender end***************************/
+
+
+/***********page addressBook start***************************/
+#addressBook .selected {
+    background-color: #c8dcf0;
+}
+
+#addressBook #iscrollWrapper {
+    top: 50px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 0;
+}
+
+
+#addressBook #addressTitle {
+    height: 50px;
+    background-color: #EAEAEA;
+    position: relative;
+    z-index: 900;
+    opacity: 0.97;
+}
+
+#addressBook #addressTitle p {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #697996;
+}
+#addressBook #addressTitle input{width: 100px; height: 30px; line-height: 30px; float: right; margin-right: 50px; margin-top: 10px; border: none;}
+#addressBook #addressTitle .rightIcon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+    /*background-image: url("../images/list-icon.png");*/
+    background-image: url("../images/search.png");
+    background-size: 100% 100%;
+}
+
+#addressBook #triangle {
+    width: 16px;
+    height: 8px;
+    position: absolute;
+    bottom: -1px;
+    left: 50px;
+    background-image: url("../images/up-triangle-01.png");
+    background-size: 100% 100%;
+}
+
+#addressBook #contactList>li {
+    height: 50px;
+    border-bottom: 1px solid #F6F5F4;
+    position: relative;
+    overflow: hidden;
+}
+
+#addressBook #contactList>li .name {
+    position: absolute;
+    left: 15px;
+    top: 16px;
+}
+
+#addressBook #contactList>li .postcode {
+    position: absolute;
+    left: 100px;
+    top: 10px;
+    font-size: 12px;
+}
+
+#addressBook #contactList>li .address {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+    right: 10px;
+    font-size: 12px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+/***********page addressBook end***************************/
+
+/***********page editGreetings start*******************/
+
+#editGreetings #greetingsContainer {
+    width: 100%;
+    position: absolute;
+    top: 20px;
+    bottom: 120px;
+}
+
+#editGreetings #greetingsContainer>div:first-child {
+    padding: 0 15px;
+    background-color: #F9F9F9;
+    height: 100%;
+    position: absolute;
+    left: 15px;
+    right: 15px;
+}
+
+#editGreetings #greetingsTitle {
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #DEDDDB;
+}
+
+#editGreetings #greetingsContent {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    top: 51px;
+}
+
+#editGreetings #greetingsContent #text {
+    height: 100%;
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 14px;
+}
+
+#editGreetings #startVoice {
+    position: absolute;
+    height: 46px;
+    left: 15px;
+    right: 15px;
+    bottom: 55px;
+    color: #ffffff;
+    line-height: 46px;
+    text-align: center;
+    background-color: #43C12F;
+    -webkit-tap-highlight-color:transparent;
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+}
+
+#editGreetings #playVoice {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+    right: 15px;
+    bottom: 55px;
+    background-image: url("../images/play.png");
+    background-size: 100% 100%;
+    display: none;
+}
+
+#editGreetings #playVoice.pause {
+    background-image: url("../images/pause.png");
+}
+/*************page editGreetings end***********************/
+
+/*************page selectPostmark start******************/
+
+#selectPostmark #postmarkContainer {
+    background-color: #FBFAF8;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    right: 15px;
+    bottom: 60px;
+}
+
+#selectPostmark #headerLabel {
+    line-height: 24px;
+    margin: 15px 0;
+    height: 60px;
+    text-align: center;
+    color: #6B7A96;
+    font-size: 16px;
+    border-bottom: 1px solid #EDECEA;
+}
+#selectPostmark #tabTitleMain{width: 100%; height: 40px; position: relative; top: 13px;}
+#selectPostmark #tabTitleMain .selectedTitle{width: 20%; height: 100%; float: left; line-height: 40px; text-align: center; font-weight: bold;background:#565656;color:#ffffff; }
+#selectPostmark #tabTitleMain .unselectedTitle{width: 20%; height: 100%; float: left; line-height: 40px; text-align: center; font-weight: bold; }
+
+
+#selectPostmark #iscrollWrapper {
+    top: 117px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+#selectPostmark #postmarkList{
+    list-style: none;
+}
+
+#selectPostmark #postmarkList>li{
+    float: left;
+    width: 54px;
+    height: 54px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+#selectPostmark #postmarkList>li>.selected{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/selected-icon.png");
+    background-size: 100% 100%;
+}
+
+#selectPostmark #postmarkList>li>img{
+    width: 100%;
+    height: 100%;
+}
+
+#selectPostmark #postmarkList>li>p{
+    font-size: 14px;
+    position: relative;
+    /*bottom: -5px;*/
+    bottom: 0px;
+    top:-5px;
+    text-align: center;
+}
+
+
+/*************page selectPostmark end********************/
+
+/*************page preview start**************************/
+#preview {
+    height: 100%;
+}
+
+#preview #iscrollWrapper {
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#preview #iscrollWrapper>div {
+    height: 560px;
+}
+
+#preview #front {
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    top: 20px;
+    height: 300px;
+}
+
+#preview #front #cardPreview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+#preview #front #cardPreview #pictureCanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+}
+
+#preview #front #cardPreview #templateCanvas {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 300px;
+    -webkit-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    -moz-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+}
+
+#preview #back {
+    position: absolute;
+    top:340px;
+    left: 15px;
+    right: 15px;
+    height: 180px;
+    border: 1px solid #222222;
+}
+
+#preview #back ul {
+    list-style: none;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+#preview #back ul>li {
+    float: left;
+    width: 18px;
+    height: 18px;
+    margin-left: 5px;
+    border: 1px solid #222222;
+    line-height: 18px;
+    text-align: center;
+}
+
+#preview #back #message {
+    position: absolute;
+    top: 50px;
+    left: 10px;
+    right: 130px;
+    bottom: 10px;
+}
+
+#preview #back #verticalLine {
+    position: absolute;
+    right: 120px;
+    top:5px;
+    bottom: 5px;
+    width: 0;
+    border-right: 1px solid #222222;
+}
+
+#preview #back #postmark {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+#preview #back #receiverInfo {
+    position: absolute;
+    top:70px;
+    right: 10px;
+    width: 100px;
+    bottom: 10px;
+    word-break: break-all;
+    word-wrap: break-word;
+    line-height: 30px;
+    font-size: 12px;
+}
+
+#preview #back #receiverInfo u {
+    width: 90px;
+}
+
+/*************page preview end**************************/
+
+/*************page order start**************************/
+#order #iscrollWrapper {
+    position: absolute;
+    top: 0;
+    bottom: 136px;
+    width: 100%;
+    overflow: hidden;
+}
+
+#order #orderInfo {
+    padding: 15px 0;
+    margin: 0 15px;
+}
+
+#order #orderInfo #headerTitle {
+    height: 50px;
+    background-color: #909090;
+    line-height: 50px;
+    color: #ffffff;
+    position: relative;
+}
+
+#order #orderInfo #headerTitle .orderIcon {
+    display: inline-block;
+    margin-top: 11px;
+    margin-left: 30px;
+    width: 28px;
+    height: 28px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#order #orderInfo #headerTitle>span {
+    position: relative;
+    top: -8px;
+    left: 8px;
+}
+
+#order #orderInfo #headerTitle #downTriangle {
+    position: absolute;
+    bottom: -10px;
+    left: 50px;
+    width: 16px;
+    height: 10px;
+    background-image: url("../images/down-triangle-gray.png");
+    background-size: 100% 100%;
+}
+
+#orderInfo #textInfo>ul {
+    list-style: none;
+}
+
+#orderInfo #textInfo>ul>li {
+    height: 50px;
+    background-color: #FBFAF8;
+    border-bottom: 1px solid #EDEEE9;
+    line-height: 50px;
+    padding: 0 15px;
+    color: #808080;
+}
+
+#orderInfo #textInfo>ul>li .left {
+    display: inline-block;
+    width: 50%;
+}
+
+#orderInfo #textInfo>ul>li .right {
+    display: inline-block;
+}
+
+#order #price {
+    position: absolute;
+    bottom: 56px;
+    height: 80px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+#order #price>div:first-child {
+    border-top: 1px solid #EDEEE9;
+}
+
+#order #price>div {
+    height: 39px;
+    border-bottom: 1px solid #EDEEE9;
+    position: relative;
+}
+
+#order #price>div .left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    border-right: 1px solid #EDEEE9;;
+}
+
+#order #price>div .right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+}
+
+#order #price>div>div .checkboxIcon {
+    margin-left: 20px;
+    margin-top: 9px;
+    width: 22px;
+    height: 22px;
+    border: none;
+    display: inline-block;
+    margin-right: 6px;
+    background-image: url("../images/unchecked.png");
+    background-size: 100% 100%;
+}
+
+#order #price>div>div .checkboxIcon.checked {
+    background-image: url("../images/checked.png");
+}
+
+#order #price>div>div .normal {
+    position: relative;
+    bottom: 4px;
+    font-size: 12px;
+    color: #949494;
+    letter-spacing: 1px;
+}
+
+#order #price>div>div .price {
+    font-size: 18px;
+    color: #B33767;
+}
+
+#order #refundCode {
+    display: block;
+    margin-left: 15px;
+    margin-top: 5px;
+    width: 70px;
+    height: 26px;
+    border: 1px solid #909090;
+    text-align: center;
+}
+
+#order #useCoupon {
+    position: absolute;
+    top: 6px;
+    right: 15px;
+    background-color: #42C12F;
+    color: #ffffff;
+    width: 50px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+}
+
+#order #sureToPay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 46px;
+    background-color: #42C12F;
+    color: #ffffff;
+    font-size: 18px;
+    text-align: center;
+    line-height: 46px;
+    letter-spacing: 5px;
+}
+/*************page order end**************************/
+
+/***********page friendsManager start***************************/
+#friendsManager .selected {
+    background-color: #c8dcf0;
+}
+
+#friendsManager #iscrollWrapper {
+    top: 50px;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    z-index: 0;
+}
+
+#friendsManager #addressTitle {
+    height: 50px;
+    background-color: #EAEAEA;
+    position: relative;
+    z-index: 900;
+    opacity: 0.97;
+}
+
+#friendsManager #addressTitle p {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #697996;
+}
+#friendsManager #addressTitle input{width: 100px; height: 30px; line-height: 30px; float: right; margin-right: 50px; margin-top: 10px; border: none;}
+
+#friendsManager #addressTitle .rightIcon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+    /*background-image: url("../images/profile.png");*/
+    background-image: url("../images/search.png");
+    background-size: 100% 100%;
+}
+
+#friendsManager #addressTitle #upTriangle {
+    position: absolute;
+    left: 50px;
+    bottom: -1px;
+    width: 16px;
+    height: 8px;
+    background-image: url("../images/up-triangle-01.png");
+    background-size: 100% 100%;
+}
+
+#friendsManager #contactList>li {
+    border-bottom: 1px solid #F6F5F4;
+    overflow: hidden;
+}
+
+#friendsManager #contactList>li>div:first-child {
+    position: relative;
+    height: 40px;
+}
+
+#friendsManager #contactList>li>div:first-child>p {
+    padding-top: 11px;
+    margin-left: 15px;
+    color: #5F5F5F;
+    font-size: 16px;
+}
+
+#friendsManager #contactList>li>div:first-child>.arrow {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: 26px;
+    height: 26px;
+}
+
+#friendsManager #contactList>li>div:first-child>.arrow-up {
+    background-image: url("../images/arrow-up.png");
+    background-size: 100% 100%;
+}
+
+#friendsManager #contactList>li>div:first-child>.arrow-down {
+    background-image: url("../images/arrow-down.png");
+    background-size: 100% 100%;
+}
+
+#friendsManager #contactList>li>.detailArea {
+    height: 60px;
+    background-color: #EAEAEA;
+    position: relative;
+}
+
+#friendsManager #contactList>li>.detailArea>.left>p:first-child {
+    margin-left: 15px;
+    position: relative;
+    top: 12px;
+    font-size: 14px;
+}
+
+#friendsManager #contactList>li>.detailArea>.left>p:last-child {
+    position: absolute;
+    left: 15px;
+    top: 35px;
+    right: 150px;
+    bottom: 10px;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#friendsManager #contactList>li>.detailArea>.buttonEdit {
+    position: absolute;
+    right: 70px;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #979797;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+
+#friendsManager #contactList>li>.detailArea>.buttonDelete {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 70px;
+    background-color: #E02E34;
+    color: #ffffff;
+    text-align: center;
+    line-height: 60px;
+}
+
+#friendsManager #tabView {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#friendsManager #tabView button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#friendsManager #tabView #addContact {
+    left: 0;
+    background-color: #3186B4;
+}
+
+#friendsManager #tabView #requestFromOther {
+    right: 0;
+    background-color: #D16A85;
+}
+/***********page friendsManager end***************************/
+
+/***********page addContact start***************************/
+#addContact #iscrollWrapper {
+    top: 0;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#addContact #scroller {
+    padding: 20px 0;
+}
+
+#addContact #container {
+    margin: 0 15px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#addContact #container #optionAddress {
+    background-color: #3B3B3B;
+    height: 40px;
+    position: relative;
+}
+
+#addContact #container #optionAddress .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top:8px;
+    left: 20px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#addContact #container #optionAddress p {
+    color: #ffffff;
+    position: relative;
+    left: 60px;
+    top:13px;
+    font-size: 14px;
+}
+
+#addContact #formContainer .input,select {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #EEEDEB;
+    background-color: #FBFAF8;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+}
+
+#addContact #formContainer #province {
+    width: 50%;
+}
+
+#addContact #formContainer #city {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+/***********page addContact end***************************/
+
+
+/***********page ordersManager start***************************/
+#ordersManager .selected {
+    background-color: #c8dcf0;
+}
+
+#ordersManager .active-tab {
+    color: #697996 !important;
+}
+
+#ordersManager #iscrollWrapper {
+    top: 80px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#ordersManager #orderTitle {
+    height: 80px;
+    background-color: #EAEAEA;
+    position: relative;
+    z-index: 900;
+    opacity: 0.97;
+}
+
+#ordersManager #orderTitle p {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+    color: #697996;
+}
+
+#ordersManager #orderTitle .rightIcon {
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    width: 26px;
+    height: 26px;
+    background-image: url("../images/order-list-icon.png");
+    background-size: 100% 100%;
+}
+
+#ordersManager #orderTitle #dateTab {
+    height: 30px;
+    width: 100%;
+    overflow-x: scroll;
+    position: absolute;
+    top: 50px;
+}
+
+#ordersManager #orderTitle #dateTab>ul {
+    list-style: none;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+}
+
+#ordersManager #orderTitle #dateTab>ul>li {
+    width: 80px;
+    display: inline-block;
+    line-height: 30px;
+    text-align: center;
+    color: #9CA5B5;
+    font-size: 14px;
+    position: relative;
+}
+
+#ordersManager #orderTitle #dateTab>ul>li>.triangle {
+    position: absolute;
+    bottom: -1px;
+    left: 32px;
+    width: 16px;
+    height: 8px;
+    background-image: url("../images/up-triangle.png");
+    background-size: 100% 100%;
+}
+
+#ordersManager #orderList>li {
+    border-bottom: 1px solid #F6F5F4;
+    overflow: hidden;
+}
+
+#ordersManager #orderList>li>div:first-child {
+    position: relative;
+    height: 40px;
+}
+
+#ordersManager #orderList>li>div:first-child>p {
+    padding-top: 11px;
+    margin-left: 15px;
+    color: #5F5F5F;
+    font-size: 16px;
+}
+
+#ordersManager #orderList>li>div:first-child>.arrow {
+    position: absolute;
+    right: 15px;
+    top: 7px;
+    width: 26px;
+    height: 26px;
+}
+
+#ordersManager #orderList>li>div:first-child>.arrow-up {
+    background-image: url("../images/arrow-up.png");
+    background-size: 100% 100%;
+}
+
+#ordersManager #orderList>li>div:first-child>.arrow-down {
+    background-image: url("../images/arrow-down.png");
+    background-size: 100% 100%;
+}
+
+#ordersManager #orderList>li>.detailArea {
+    height: 160px;
+    background-color: #EAEAEA;
+    position: relative;
+}
+
+#ordersManager #orderList>li>.detailArea .left {
+    position: absolute;
+    top:15px;
+    left: 15px;
+    right: 160px;
+    bottom: 65px;
+    color: #696969;
+}
+
+#ordersManager #orderList>li>.detailArea .left>p:first-child {
+    position: relative;
+    top: 5px;
+    font-size: 18px;
+}
+
+#ordersManager #orderList>li>.detailArea .left>p:nth-child(2) {
+    position: relative;
+    top: 20px;
+    font-size: 14px;
+}
+
+#ordersManager #orderList>li>.detailArea .left>p:nth-child(3) {
+    position: relative;
+    top: 26px;
+    font-size: 14px;
+}
+
+#ordersManager #orderList>li>.detailArea .right {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 80px;
+    width: 130px;
+}
+
+#ordersManager #orderList>li>.detailArea .right>img {
+    max-width: 100%;
+    height: 100%;
+}
+
+#ordersManager #orderList>li>.detailArea .continueButton {
+    position: absolute;
+    left: 10%;
+    width: 40%;
+    height: 36px;
+    bottom: 15px;
+    background-color: #39B835;
+    color: #ffffff;
+    line-height: 36px;
+    text-align: center;
+}
+
+#ordersManager #orderList>li>.detailArea .shareButton {
+    position: absolute;
+    right: 10%;
+    width: 40%;
+    height: 36px;
+    bottom: 15px;
+    background-color: #C7C7C7;
+    color: #5D5D5D;
+    line-height: 36px;
+    text-align: center;
+}
+/***********page ordersManager end***************************/
+
+/***********page continueOrder start***************************/
+#continueOrder #cardPreview {
+    width: 60%;
+    position: absolute;
+    top: 10px;
+    left: 20%;
+    right: 20%;
+    bottom: 50px;
+}
+
+#continueOrder #cardPreview>img {
+    width: 100%;
+    height: 100%;
+}
+/***********page continueOrder end***************************/
+
+/***********page like start***************************/
+#like .number {
+    position: relative;
+    bottom: -50px;
+    width: 100%;
+    text-align: center;
+}
+
+#like #cardPreview {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 160px;
+}
+
+#like #cardPreview #pictureCanvas {
+    width: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+}
+
+#like #cardPreview #templateCanvas {
+    height: 100%;
+    position: absolute;
+    display: block;
+    top: 0;
+    -webkit-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    -moz-box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+    box-shadow:0 0 10px rgba(104, 104, 104, 0.7);
+}
+
+#like #likeButton {
+    position: absolute;
+    bottom: 50px;
+    left: 30%;
+    width: 40px;
+    height: 40px;
+}
+
+#like .like-inactive {
+    background-image: url("../images/good-icon-inactive.png");
+    background-size: 100% 100%;
+}
+
+#like .like-active {
+    background-image: url("../images/good-icon-active.png");
+    background-size: 100% 100%;
+}
+
+#like #unlikeButton {
+    position: absolute;
+    bottom: 50px;
+    right: 30%;
+    width: 40px;
+    height: 40px;
+}
+
+#like .unlike-inactive {
+    background-image: url("../images/bad-icon-inactive.png");
+    background-size: 100% 100%;
+}
+
+#like .unlike-active {
+    background-image: url("../images/bad-icon-active.png");
+    background-size: 100% 100%;
+}
+/***********page like end***************************/
+
+/***********page requestAddress start***************************/
+#requestAddress #iscrollWrapper {
+    top: 0;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#requestAddress #container {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#requestAddress #container #optionAddress {
+    background-color: #3B3B3B;
+    height: 40px;
+    position: relative;
+}
+
+#requestAddress #container #optionAddress .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top:8px;
+    left: 20px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#requestAddress #container #optionAddress p {
+    color: #ffffff;
+    position: relative;
+    left: 60px;
+    top:13px;
+    font-size: 14px;
+}
+
+#requestAddress #formContainer .input,select {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #EEEDEB;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#requestAddress #formContainer #province {
+    width: 50%;
+}
+
+#requestAddress #formContainer #city {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+#requestAddress #formContainer #provinceShow {
+    width: 50%;
+}
+
+#requestAddress #formContainer #cityShow {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+#requestAddress #tips {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+/***********page requestAddress end***************************/
+
+/***********page showRequestAddress start***************************/
+#showRequestAddress #iscrollWrapper {
+    top: 0;
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+}
+
+#showRequestAddress #container {
+    margin: 0;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#showRequestAddress #container #optionAddress {
+    background-color: #3B3B3B;
+    height: 40px;
+    position: relative;
+}
+
+#showRequestAddress #container #optionAddress .icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    top:8px;
+    left: 20px;
+    background-image: url("../images/list-icon-white.png");
+    background-size: 100% 100%;
+}
+
+#showRequestAddress #container #optionAddress p {
+    color: #ffffff;
+    position: relative;
+    left: 60px;
+    top:13px;
+    font-size: 14px;
+}
+
+#showRequestAddress #formContainer .input,select {
+    width: 100%;
+    height: 40px;
+    padding: 0 15px;
+    line-height: 40px;
+    border: none;
+    border-bottom: 1px solid #EEEDEB;
+    font-size: 14px;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: transparent;
+}
+
+#showRequestAddress #formContainer #province {
+    width: 50%;
+}
+
+#showRequestAddress #formContainer #city {
+    width: 50%;
+    position: absolute;
+    right: 0;
+}
+
+#showRequestAddress #tips {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+}
+/***********page showRequestAddress end***************************/
+
+
+/***********page done start***************************/
+#done #tips {
+    display: block;
+    margin: auto;
+    margin-top: 40px;
+    width: 70%;
+}
+
+#done #tabView {
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+#done #tabView button {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 50%;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+#done #tabView #orderDetailButton {
+    left: 0;
+    background-color: #3386B5;
+}
+
+#done #tabView #shareToFriendButton {
+    right: 0;
+    background-color: #40C126;
+}
+/***********page done end***************************/
+
+/***********page share start **********************/
+#userimgList{position:relative; height: auto; margin: 20px auto 0px auto; width: 100%; }
+#userimgList div{width: 20%; height: auto; float: left;}
+#userimgList div img{ width:90%;  height:70px; margin: 0 auto; margin-top: 5px; border: 1px solid #e1e1e1;}
+#btnLike{position:relative; width: 80%; height: auto; margin: 10px auto 0px auto;}
+#btnLike div{width:25px; height: 25px; margin: 0 auto;}
+#btnLike div img{width: 100%; height: 100%;}
+/***********page share end **********************/
+
+
+
