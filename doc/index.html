@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<!-- saved from url=(0255)http://quyou.quyoucard.com/client/index.html#/selectPostmark?picurl=http:%2F%2Fquyou.quyoucard.com%2Fpostcards%2Fimages%2F161027%2F1477528671_orig.jpg&actId=1&nonce=1477528672281%3F&username=odVjojl6WxXlSvBKKyMXCYAbMJfo&openId=odVjojl6WxXlSvBKKyMXCYAbMJfo -->
+<html ng-app="Postcard" class="ng-scope"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}</style>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="./index_files/app.css">
+        <link rel="stylesheet" href="./index_files/animation.css">
+    </head>
+    <body>
+        <div id="header">
+            <button id="button_left" ng-click="onHeaderLeftButtonClick()" class="ng-binding">&lt;取消</button>
+            <button id="button_right" ng-click="onHeaderRightButtonClick()" class="ng-binding"></button>
+        </div>
+
+        <!-- ngView:  --><div id="body" ng-view="" class="ng-scope">
+<div id="selectPostmark" class="ng-scope">
+    <div id="postmarkContainer" class="corner">
+        <div id="headerLabel">
+            选择所在城市的定位戳<span style="color: #00A6EF">or</span><br>
+            热门城市的纪念戳
+            <div id="tabTitleMain">
+                <div class="unselectedTitle" id="hot_title">热门</div>
+                <div class="selectedTitle" id="city_title">城市</div>
+                <div class="unselectedTitle" id="province_title">省份</div>
+                <div class="unselectedTitle" id="view_title">景点</div>
+                <div class="unselectedTitle" id="foreign_title">国外</div>
+            </div>
+        </div>
+
+        <div id="iscrollWrapper">
+            <ul id="postmarkList" style="transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1); transition-duration: 0ms; transform: translate(0px, 0px) translateZ(0px);">
+                <!-- ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/chengdu.png" src="./index_files/chengdu.png">
+                    <p class="ng-binding">成都</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/dalian.png" src="./index_files/dalian.png">
+                    <p class="ng-binding">大连</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/guangzhou.png" src="./index_files/guangzhou.png">
+                    <p class="ng-binding">广州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/guilin.png" src="./index_files/guilin.png">
+                    <p class="ng-binding">桂林</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/hangzhou.png" src="./index_files/hangzhou.png">
+                    <p class="ng-binding">杭州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/jinan.png" src="./index_files/jinan.png">
+                    <p class="ng-binding">济南</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/kunming.png" src="./index_files/kunming.png">
+                    <p class="ng-binding">昆明</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/lasa.png" src="./index_files/lasa.png">
+                    <p class="ng-binding">拉萨</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/lijiang.png" src="./index_files/lijiang.png">
+                    <p class="ng-binding">丽江</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/luoyang.png" src="./index_files/luoyang.png">
+                    <p class="ng-binding">洛阳</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/nanjing.png" src="./index_files/nanjing.png">
+                    <p class="ng-binding">南京</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/ningbo.png" src="./index_files/ningbo.png">
+                    <p class="ng-binding">宁波</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/qingdao.png" src="./index_files/qingdao.png">
+                    <p class="ng-binding">青岛</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/sanya.png" src="./index_files/sanya.png">
+                    <p class="ng-binding">三亚</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/shaoxing.png" src="./index_files/shaoxing.png">
+                    <p class="ng-binding">绍兴</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/shenzhen.png" src="./index_files/shenzhen.png">
+                    <p class="ng-binding">深圳</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/suzhou.png" src="./index_files/suzhou.png">
+                    <p class="ng-binding">苏州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/wuhan.png" src="./index_files/wuhan.png">
+                    <p class="ng-binding">武汉</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/xiamen.png" src="./index_files/xiamen.png">
+                    <p class="ng-binding">厦门</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/xian.png" src="./index_files/xian.png">
+                    <p class="ng-binding">西安</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/pudong.png" src="./index_files/pudong.png">
+                    <p class="ng-binding">浦东</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/qufu.png" src="./index_files/qufu.png">
+                    <p class="ng-binding">曲阜</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/changde.png" src="./index_files/changde.png">
+                    <p class="ng-binding">常德</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/dali.png" src="./index_files/dali.png">
+                    <p class="ng-binding">大理</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/foshan.png" src="./index_files/foshan.png">
+                    <p class="ng-binding">佛山</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/guiyang.png" src="./index_files/guiyang.png">
+                    <p class="ng-binding">贵阳</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/haikou.png" src="./index_files/haikou.png">
+                    <p class="ng-binding">海口</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/hefei.png" src="./index_files/hefei.png">
+                    <p class="ng-binding">合肥</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/hengyang.png" src="./index_files/hengyang.png">
+                    <p class="ng-binding">衡阳</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/jiaxing.png" src="./index_files/jiaxing.png">
+                    <p class="ng-binding">嘉兴</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/lishui.png" src="./index_files/lishui.png">
+                    <p class="ng-binding">丽水</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/nanchang.png" src="./index_files/nanchang.png">
+                    <p class="ng-binding">南昌</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/quanzhou.png" src="./index_files/quanzhou.png">
+                    <p class="ng-binding">泉州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/taiyuan.png" src="./index_files/taiyuan.png">
+                    <p class="ng-binding">太原</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/taian.png" src="./index_files/taian.png">
+                    <p class="ng-binding">泰安</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/tangshan.png" src="./index_files/tangshan.png">
+                    <p class="ng-binding">唐山</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/wuxi.png" src="./index_files/wuxi.png">
+                    <p class="ng-binding">无锡</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/xianyang.png" src="./index_files/xianyang.png">
+                    <p class="ng-binding">咸阳</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/xuzhou.png" src="./index_files/xuzhou.png">
+                    <p class="ng-binding">徐州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/zhangjiajie.png" src="./index_files/zhangjiajie.png">
+                    <p class="ng-binding">张家界</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/zhangjiakou.png" src="./index_files/zhangjiakou.png">
+                    <p class="ng-binding">张家口</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/changsha.png" src="./index_files/changsha.png">
+                    <p class="ng-binding">长沙</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/zhenjiang.png" src="./index_files/zhenjiang.png">
+                    <p class="ng-binding">镇江</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/zhengzhou.png" src="./index_files/zhengzhou.png">
+                    <p class="ng-binding">郑州</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/chongqing.png" src="./index_files/chongqing.png">
+                    <p class="ng-binding">重庆</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList --><li ng-repeat="youchuo in youchuoList" ng-click="onClickLi($index)" class="ng-scope">
+                    <div ng-class="getClass($index)"></div>
+                    <img ng-src="images/postmark/city/zunyi.png" src="./index_files/zunyi.png">
+                    <p class="ng-binding">遵义</p>
+                </li><!-- end ngRepeat: youchuo in youchuoList -->
+                <div class="clear"></div>
+            </ul>
+
+        <div class="iScrollVerticalScrollbar iScrollLoneScrollbar" style="position: absolute; z-index: 9999; width: 7px; bottom: 2px; top: 2px; right: 1px; overflow: hidden; pointer-events: none;"><div class="iScrollIndicator" style="box-sizing: border-box; position: absolute; background: rgba(0, 0, 0, 0.498039); border: 1px solid rgba(255, 255, 255, 0.901961); border-radius: 3px; width: 100%; transition-duration: 0ms; display: none; height: 617px; transform: translate(0px, 0px) translateZ(0px); transition-timing-function: cubic-bezier(0.1, 0.57, 0.1, 1);"></div></div></div>
+    </div>
+
+    <button class="bottomOkButton" ng-click="onOkButtonClick()">
+        确&nbsp;&nbsp;认
+    </button>
+</div></div>
+
+        <div id="overlay">
+            <div id="content">
+
+            </div>
+        </div>
+
+        <!--<script src="js/hammer.min.js"></script>-->
+        <!--<script src="js/touch.min.js"></script>-->
+        <!--<script src="js/zepto.min.js"></script>-->
+        <!--<script src="js/iscroll/iscroll.js"></script>-->
+        <!--<script src="js/qr.js"></script>-->
+        <!--<script src="js/jweixin-1.0.0.js"></script>-->
+        <!--<script src="js/angular/1.3.15/angular.min.js"></script>-->
+        <!--<script src="js/angular/1.3.15/angular-touch.min.js"></script>-->
+        <!--<script src="js/angular/1.3.15/angular-route.min.js"></script>-->
+        <!--<script src="js/angular/1.3.15/angular-animate.min.js"></script>-->
+        <!--<script src="js/util.js"></script>-->
+        <!--<script src="js/provinces.js"></script>-->
+        <!--<script src="js/activityNames.js"></script>-->
+        <!--<script src="js/activityTips.js"></script>-->
+        <!--<script src="js/config.js"></script>-->
+        <!--<script src="js/controllers.js"></script>-->
+        <!--<script src="js/controllers/SelectTemplateController.js"></script>-->
+        <!--<script src="js/controllers/EditInfoController.js"></script>-->
+        <!--<script src="js/controllers/EditContactController.js"></script>-->
+        <!--<script src="js/controllers/EditSenderController.js"></script>-->
+        <!--<script src="js/controllers/AddressBookController.js"></script>-->
+        <!--<script src="js/controllers/EditGreetingsController.js"></script>-->
+        <!--<script src="js/controllers/SelectGreetingsController.js"></script>-->
+        <!--<script src="js/controllers/SelectPostmarkController.js"></script>-->
+        <!--<script src="js/controllers/PreviewController.js"></script>-->
+        <!--<script src="js/controllers/OrderController.js"></script>-->
+        <!--<script src="js/controllers/FriendsManagerController.js"></script>-->
+        <!--<script src="js/controllers/AddContactController.js"></script>-->
+        <!--<script src="js/controllers/OrdersManagerController.js"></script>-->
+        <!--<script src="js/controllers/ContinueOrderController.js"></script>-->
+        <!--<script src="js/controllers/LikeController.js"></script>-->
+        <!--<script src="js/controllers/ShareController.js"></script>-->
+        <!--<script src="js/controllers/RequestAddressController.js"></script>-->
+        <!--<script src="js/controllers/requestAddressSuccessController.js"></script>-->
+        <!--<script src="js/controllers/DoneController.js"></script>-->
+        <!--<script src="js/controllers/ShowRequestAddressController.js"></script>-->
+        <!--<script src="js/controllers/ScanToPayController.js"></script>-->
+        <!--<script src="js/app.js"></script>-->
+
+        <script src="./index_files/all.min.js.下载"></script>
+    
+</body></html>
