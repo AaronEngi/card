@@ -30,7 +30,6 @@
     "webpack-dev-server": "^1.16.2"
   },
   "dependencies": {
-    "babel-preset-react": "^6.16.0",
     "babelify": "^7.3.0",
     "exenv": "^1.2.1",
     "g2": "^1.2.6",
