@@ -34,6 +34,7 @@
     "exenv": "^1.2.1",
     "g2": "^1.2.6",
     "g2-react": "^1.1.0",
+    "jquery": "^3.1.1",
     "kw-react-tween-state": "^0.1.5",
     "object-assign": "^4.1.0",
     "react": "^15.3.2",
@@ -41,6 +42,7 @@
     "react-dom": "^15.3.2",
     "react-router": "^2.8.1",
     "react-weui": "^0.4.0",
+    "weixin-js-sdk": "^1.0.7",
     "weui": "^1.0.1"
   }
 }
